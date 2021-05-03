@@ -147,7 +147,7 @@ where ss.artist_id IS NOT NULL
 
 time_table_insert = (""" 
 insert into time (start_time, hour, day, week, month, year, weekday)
-select distinct TIMESTAMP 'epoch' + se.ts/1000 *INTERVAL '1 second' AS start_time, EXTRACT(hour FROM start_time) AS hour,          EXTRACT(day FROM start_time) AS day, EXTRACT(week FROM start_time) AS week, EXTRACT(month FROM start_time) AS month, EXTRACT(year FROM start_time) AS year, EXTRACT(week FROM start_time) AS weekday
+select distinct TIMESTAMP 'epoch' + se.ts/1000 *INTERVAL '1 second' AS start_time, EXTRACT(hour FROM start_time) AS hour,EXTRACT(day FROM start_time) AS day, EXTRACT(week FROM start_time) AS week, EXTRACT(month FROM start_time) AS month, EXTRACT(year FROM start_time) AS year, EXTRACT(week FROM start_time) AS weekday
 FROM staging_events AS se
 where se.page = 'NextSong' 
 """)
