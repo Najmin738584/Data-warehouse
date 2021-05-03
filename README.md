@@ -13,6 +13,7 @@ Two datasets that reside in S3 are
 Using the song and event datasets We created a star schema optimized for queries on song play analysis. This includes the following tables
 
 Fact Table       - 1) songplays
+
 Dimension Tables - 1) users  
                    2) songs  
                    3) artists  
