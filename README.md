@@ -10,7 +10,7 @@ Two datasets that reside in S3 are
 2) log_data
 
 ### Schema for Song Play Analysis : 
-Using the song and event datasets We created a star schema optimized for queries on song play analysis. This includes the following tables
+Using the song and log datasets We created a star schema optimized for queries on song play analysis. This includes the following tables
 
 Fact Table       - 1) songplays
 
